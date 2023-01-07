@@ -1,0 +1,23 @@
+.chat-body {
+  height: 100vh;
+  width: 100vw;
+  background-color: $bgcolor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  .chat-container {
+    border-radius: 10px;
+    height: 85vh;
+    width: 85vw;
+    background-color: plum;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    @media screen and (min-width: 720px) and (max-width: 1080px) {
+      grid-template-columns: 35% 65%;
+    }
+    @media screen and (min-width: 360px) and (max-width: 480px) {
+      grid-template-columns: 35% 65%;
+    }
+  }
+}

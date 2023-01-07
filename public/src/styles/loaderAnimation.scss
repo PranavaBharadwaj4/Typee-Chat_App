@@ -1,0 +1,41 @@
+.loading {
+  background-color: $bgcolor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  transition: opacity 0.3s ease-in;
+  margin: 0;
+}
+
+.circle {
+  background: linear-gradient(
+    to right,
+    rgba(161, 140, 209, 1),
+    rgba(251, 194, 235, 1)
+  );
+  border-radius: 50%;
+  margin: 6px;
+  height: 30px;
+  width: 30px;
+  animation: jump 0.5s ease-in infinite;
+}
+
+.circle:nth-of-type(2) {
+  animation-delay: 0.1s;
+}
+
+.circle:nth-of-type(3) {
+  animation-delay: 0.2s;
+}
+
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}

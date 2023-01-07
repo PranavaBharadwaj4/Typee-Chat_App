@@ -1,0 +1,120 @@
+.contacts-body {
+  display: grid;
+  grid-template-rows: 10% 75% 15%;
+  overflow: hidden;
+  background-color: cyan;
+  border-radius: 10px;
+  height: inherit;
+
+  .brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    img {
+      height: 2rem;
+    }
+    h1 {
+      transition: 0.3s ease-in-out;
+      color: white;
+      text-transform: uppercase;
+      text-shadow: 3px -3px 3px plum, 2px 2px 5px black;
+      &:hover {
+        color: black;
+        text-shadow: 5px -5px 3px white, 2px 2px 5px plum;
+      }
+    }
+  }
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+    overflow: auto;
+    gap: 0.8em;
+    &::-webkit-scrollbar {
+      width: 0.2rem;
+      &-thumb {
+        background-color: #ffffff39;
+        width: 0.1rem;
+        border-radius: 1rem;
+      }
+    }
+    .contact {
+      background: linear-gradient(
+        to right,
+        rgba(161, 140, 209, 1),
+        rgba(251, 194, 235, 1)
+      );
+      min-height: 5rem;
+      width: 90%;
+      cursor: pointer;
+      border-radius: 0.2rem;
+      gap: 1rem;
+      display: flex;
+      align-items: center;
+      transition: 0.5s ease-in-out;
+      .icon {
+        padding-left: 1rem;
+
+        img {
+          height: 3rem;
+        }
+      }
+      .username {
+        h3 {
+          color: white;
+        }
+      }
+    }
+    .contact-selected {
+      background: black;
+      min-height: 5rem;
+      width: 90%;
+      cursor: pointer;
+      border-radius: 0.2rem;
+      gap: 1rem;
+      align-items: center;
+      display: flex;
+      transition: 0.5s ease-in-out;
+      .icon {
+        padding-left: 1.5rem;
+        img {
+          height: 3rem;
+        }
+      }
+      .username {
+        h3 {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.current-user {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  .icon {
+    img {
+      height: 4rem;
+      max-inline-size: 100%;
+    }
+  }
+  .username {
+    h2 {
+      color: black;
+    }
+  }
+  @media screen and (min-width: 720px) and (max-width: 1080px) {
+    gap: 0.5rem;
+    .username {
+      h2 {
+        font-size: 1rem;
+      }
+    }
+  }
+}
