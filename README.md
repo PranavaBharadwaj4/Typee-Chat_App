@@ -1,5 +1,5 @@
 Built with React (front-end) along with Socket.io (server) and Mongo DB.
-TYPEE is a aesthetically pleasing chat app to help stay in touch with aquaintences online.
+TYPEE is an aesthetically pleasing chat app to help stay in touch with aquaintences online.
 Try it out Yourself!
 
 
